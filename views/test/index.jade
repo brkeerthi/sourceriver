@@ -1,0 +1,910 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    |   
+    title Elegance
+    |   
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    |   
+    link(rel='stylesheet', type='text/css', href='/views/test/css/normal.css?')
+    |   
+    link(rel='stylesheet', type='text/css', href='/views/test/css/style.css?')
+    |   
+    link(rel='stylesheet', href='/views/test/css/animation.css?')
+    |   
+    script(src='https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js')
+    |   
+    script.
+      if (/mobile/i.test(navigator.userAgent)) document.documentElement.className += ' w-mobile';
+    |   
+    link(rel='shortcut icon', type='image/x-icon', href='favicon.ico')
+    //if lt IE 9
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js')
+  body
+    #home.fix-header
+      .w-container
+        .w-nav(data-collapse='medium', data-animation='default', data-duration='400')
+    |   
+    .fixed-header
+      .w-container.container
+        .w-row
+          //
+            ///////////////////////////////////////////////////////
+            // Logo sections
+            //////////////////////////////////////////////////////////
+          .w-col.w-col-3.logo
+            a(href='#')
+              img.logo(src='/views/test/images/logo.png', alt='Elegance')
+          //
+            ///////////////////////////////////////////////////////
+            // End Logo section
+            //////////////////////////////////////////////////////////
+          .w-col.w-col-9
+            //
+              ///////////////////////////////////////////////////////
+              // Menu section
+              //////////////////////////////////////////////////////////
+            .w-nav.navbar(data-collapse='medium', data-animation='default', data-duration='400', data-contain='1')
+              .w-container.nav
+                nav.w-nav-menu.nav-menu(role='navigation')
+                  a.w-nav-link.menu-li(href='#home') HOME
+                  |                 
+                  a.w-nav-link.menu-li(href='#about') ABOUT
+                  |                 
+                  a.w-nav-link.menu-li(href='#service') SERVICES
+                  |                 
+                  a.w-nav-link.menu-li(href='#portfolio') PORTFOLIO
+                  |                 
+                  a.w-nav-link.menu-li(href='#team') TEAM
+                  |                 
+                  a.w-nav-link.menu-li(href='#contact') CONTACT
+                |               
+                .w-nav-button
+                  .w-icon-nav-menu
+            //
+              ///////////////////////////////////////////////////////
+              // End Menu section
+              //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      //  Slider section
+      //////////////////////////////////////////////////////////
+    .slidersection
+      .sp-slideshow
+        input#button-1.sp-selector-1(type='radio', name='radio-set', checked='checked')
+        |         
+        label.button-label-1(for='button-1')
+        |         
+        |         
+        input#button-2.sp-selector-2(type='radio', name='radio-set')
+        |         
+        label.button-label-2(for='button-2')
+        |         
+        |         
+        input#button-3.sp-selector-3(type='radio', name='radio-set')
+        |         
+        label.button-label-3(for='button-3')
+        |         
+        |         
+        input#button-4.sp-selector-4(type='radio', name='radio-set')
+        |         
+        label.button-label-4(for='button-4')
+        |         
+        |         
+        input#button-5.sp-selector-5(type='radio', name='radio-set')
+        |         
+        label.button-label-5(for='button-5')
+        |         
+        |         
+        label.sp-arrow.sp-a1(for='button-1')
+        |         
+        label.sp-arrow.sp-a2(for='button-2')
+        |         
+        label.sp-arrow.sp-a3(for='button-3')
+        |         
+        label.sp-arrow.sp-a4(for='button-4')
+        |         
+        label.sp-arrow.sp-a5(for='button-5')
+        |         
+        |         
+        .sp-content
+          .sp-parallax-bg
+          |           
+          ul.sp-slider.clearfix
+            li
+              img(src='/views/test/images/slider/slider1.png', alt='image01')
+            |             
+            li
+              img(src='/views/test/images/slider/slider2.png', alt='image02')
+            |             
+            li
+              img(src='/views/test/images/slider/slider3.png', alt='image03')
+            |             
+            li
+              img(src='/views/test/images/slider/slider4.png', alt='image04')
+            |             
+            li
+              img(src='/views/test/images/slider/slider5.png', alt='image05')
+        // sp-content
+      // sp-slideshow
+    //
+      ///////////////////////////////////////////////////////
+      // End slider section
+      //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      // About section
+      //////////////////////////////////////////////////////////
+    #about.about-parlex
+      section.parlex7-back
+        .w-container
+          #about-animation
+            .wrap
+              .about
+                h1.about-heading ABOUT
+                |             
+                .about-text WHO WE ARE ?
+                |             
+                .sepreater
+              |           
+              p.about-des
+                | We are Elegance. We create stunning identities for our clients that people fall in love with.&nbsp;
+                br
+                | Whether it&apos;s an app icon, a logo for a hot startup, or just an illustration, we&apos;ll work hard until you can&apos;t help but say &quot;WOW!&quot;.
+              |           
+              img.about-img(src='/views/test/images/about.png', alt='52de15aa5d3566c14300015e_about.png')
+    //
+      ///////////////////////////////////////////////////////
+      // End about section
+      //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      // Who We Are Section
+      //////////////////////////////////////////////////////////
+    .exp.service-parlex
+      .exp-back
+        .w-container
+          #who-v-animation
+            .wrap
+              .w-row.exp-des
+                .w-col.w-col-6.exp-col1
+                  .col1-div
+                    .experinc-box
+                      h3.experinc-box-h3 Who We Are
+                      |                 
+                      p
+                        | At Elegance, we have highly skilled and professional team of dedicated web professionals to take care of your projects. 
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. 
+                        br
+                        |  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      |                 
+                      .buttons
+                        .btn-ex-one
+                          a.ex-btn(href='#') Read More
+                        |                 
+                        .btn-ex-two
+                          a.ex-btn-two(href='#') Buy Now!
+                |             
+                .w-col.w-col-6.exp-col2
+                  .col2-div
+                    img(src='/views/test/images/who-we-are.png')
+    //
+      ///////////////////////////////////////////////////////
+      // End Who We Are section
+      //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      // Call to action section
+      //////////////////////////////////////////////////////////
+    .call-to-action
+      .call-to-back
+        .w-container
+          .wrap
+            .w-row.call-row
+              .w-col.w-col-9.cal-col-1
+                h3.call-to-h3 Elegance | Responsive Onepage HTML Tempalte
+                |               
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+              |             
+              .w-col.w-col-3
+                a.call-to-butn(href='#') Buy Now!
+    //
+      ///////////////////////////////////////////////////////
+      // End call to action section
+      //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      // Service section
+      //////////////////////////////////////////////////////////
+    section#service.service-parlex
+      section.parlex-back
+        .w-container
+          .wrap
+            .service-combo
+              .services
+                h1.service-heading SERVICES
+                |               
+                .services-text WHAT WE DO?
+                |               
+                .sepreater.service
+              |             
+              .services-text
+                | &ldquo; THE BEST RESULTS ARE OBTAINED BY TASKING THE RIGHT PEOPLE TO THE RIGHT PROJECT &rdquo;
+                br
+                | We understand that everybody has their unique strengths and we put that knowledge to use by assembling the most efficient team possible for your project. You know your business better than anyone. Your insights, combined with our skills
+                |               and creativity, will result in branding and marketing that truly stand out. We&rsquo;re ready to get started.
+              |             
+              .w-row
+                .w-col.w-col-3.services-column
+                  .service-icon
+                    img(src='/views/test/images/services/Web-Design-Development.png')
+                  |                 
+                  h4.service-head WEB DESIGN &amp; DEVELOPMENT
+                |               
+                .w-col.w-col-3
+                  .service-icon
+                    img(src='/views/test/images/services/Branding-Identity.png')
+                  |                 
+                  h4.service-head Branding/Positioning &amp; IDENTITY
+                |               
+                .w-col.w-col-3
+                  .service-icon
+                    img(src='/views/test/images/services/Motion-Video.png')
+                  |                 
+                  h4.service-head Marketing Communications
+                |               
+                .w-col.w-col-3
+                  .service-icon
+                    img(src='/views/test/images/services/UX-UI.png')
+                  |                 
+                  h4.service-head
+                    | UI/UX Design
+                    br
+                    | Mobile Design
+    //
+      ///////////////////////////////////////////////////////
+      // End Service section
+      //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      // Process section
+      //////////////////////////////////////////////////////////
+    .process-parlex
+      .parlex2-back
+        .w-container
+          .wrap
+            .process
+              h1.our-process-heading OUR PROCESS
+              |             
+              .sepreater
+            |           
+            .process-text
+              .process-text Our process is straight forward, simple, &amp; successful.
+              |             
+              .w-row
+                .w-col.w-col-3
+                  .hi-icon-wrap.hi-icon-effect-5.hi-icon-effect-5a
+                    a.hi-icon.hi-icon-locked(href='#set-1') Security
+                  |                 
+                  h4.our-process-sys BRAINSTORM
+                  |                 
+                  p.process-paragraph
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
+                    | cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+                |               
+                .w-col.w-col-3
+                  .hi-icon-wrap.hi-icon-effect-5.hi-icon-effect-5a
+                    a.hi-icon.hi-icon-mobile(href='#set-1') Mobile
+                  |                 
+                  h4.our-process-sys PLAN
+                  |                 
+                  p.process-paragraph
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
+                    | cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+                |               
+                .w-col.w-col-3
+                  .hi-icon-wrap.hi-icon-effect-5.hi-icon-effect-5a
+                    a.hi-icon.hi-icon-screen(href='#set-1') Desktop
+                  |                 
+                  h4.our-process-sys DESIGN
+                  |                 
+                  p.process-paragraph
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
+                    | cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+                |               
+                .w-col.w-col-3
+                  .hi-icon-wrap.hi-icon-effect-5.hi-icon-effect-5a
+                    a.hi-icon.hi-icon-earth(href='#set-1') Partners
+                  |                 
+                  h4.our-process-sys DEVELOP
+                  |                 
+                  p.process-paragraph
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
+                    | cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+    //
+      ///////////////////////////////////////////////////////
+      // End Process section
+      //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      // Porfolio section
+      //////////////////////////////////////////////////////////
+    #portfolio.portfolio-parlex
+      .parlex3-back
+        .w-container
+          .wrap
+            .portfolio
+              h1.portfolio-heading PORTFOLIO
+              |             
+              .portfolio-text OUR WORK
+              |             
+              .sepreater
+            |           
+            p.porfolio-paragraph
+              | THE BEST RESULTS ARE OBTAINED BY TASKING THE RIGHT PEOPLE TO THE RIGHT PROJECT
+              br
+              | We do what we love. Our clients love what we do.
+            |             
+            .container.demo-1
+              ul.grid.cs-style-1
+                li
+                  figure
+                    img.portfolio-images(src='/views/test/images/portfolio/1.jpg', alt='img01')
+                    |             
+                    figcaption
+                      h3 Camera
+                      |               
+                      span Jacob Cummings
+                      |               
+                      a(href='#') Take a look
+                |         
+                li
+                  figure
+                    img.portfolio-images(src='/views/test/images/portfolio/2.jpg', alt='img02')
+                    |             
+                    figcaption
+                      h3 Music
+                      |               
+                      span Jacob Cummings
+                      |               
+                      a(href='#') Take a look
+                |         
+                li
+                  figure
+                    img.portfolio-images(src='/views/test/images/portfolio/4.jpg', alt='img04')
+                    |             
+                    figcaption
+                      h3 Settings
+                      |               
+                      span Jacob Cummings
+                      |               
+                      a(href='#') Take a look
+                |         
+                li
+                  figure
+                    img.portfolio-images(src='/views/test/images/portfolio/5.jpg', alt='img05')
+                    |             
+                    figcaption
+                      h3 Safari
+                      |               
+                      span Jacob Cummings
+                      |               
+                      a(href='#') Take a look
+                |         
+                li
+                  figure
+                    img.portfolio-images(src='/views/test/images/portfolio/3.jpg', alt='img03')
+                    |             
+                    figcaption
+                      h3 Phone
+                      |               
+                      span Jacob Cummings
+                      |               
+                      a(href='#') Take a look
+                |         
+                li
+                  figure
+                    img.portfolio-images(src='/views/test/images/portfolio/6.jpg', alt='img06')
+                    |             
+                    figcaption
+                      h3 Game Center
+                      |               
+                      span Jacob Cummings
+                      |               
+                      a(href='#') Take a look
+                |         
+                li
+                  figure
+                    img.portfolio-images(src='/views/test/images/portfolio/7.jpg', alt='img06')
+                    |             
+                    figcaption
+                      h3 Game Center
+                      |               
+                      span Jacob Cummings
+                      |               
+                      a(href='#') Take a look
+                |         
+                li
+                  figure
+                    img.portfolio-images(src='/views/test/images/portfolio/8.jpg', alt='img06')
+                    |             
+                    figcaption
+                      h3 Game Center
+                      |               
+                      span Jacob Cummings
+                      |               
+                      a(href='#') Take a look
+                |         
+                li
+                  figure
+                    img.portfolio-images(src='/views/test/images/portfolio/9.jpg', alt='img06')
+                    |             
+                    figcaption
+                      h3 Game Center
+                      |               
+                      span Jacob Cummings
+                      |               
+                      a(href='#') Take a look
+            // /container
+    //
+      ///////////////////////////////////////////////////////
+      // End Porfolio section
+      //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      // Our-plan section
+      //////////////////////////////////////////////////////////
+    .our-plan-parlex
+      .parlex4-back
+        .w-container
+          .wrap
+            .our-plans
+              h1.ourplan-heading OUR PLANS
+              |             
+              .our-plan-text SELECT YOUR BEST PLAN
+            |           
+            .sepreater
+            |           
+            p.our-plan-paragraph
+              | As a creative studio we believe no client is too big nor too small to work with us. We love what we do. And that shows.
+              br
+              | We like to create things with fun, like-minded people.
+            |           
+            .w-row
+              .w-col.w-col-3
+                .plan1
+                  .plan1-ser1
+                    h4 PERSONAL SITE
+                    |                   
+                    .price $15 / Month
+                  |                 
+                  p.plan1-ser1-para
+                    br
+                    | Unlimited&nbsp;Email-Addresses
+                    |                   
+                    br
+                    |                   
+                    br
+                    | 50GB&nbsp;Disk&nbsp;Space
+                    |                   
+                    br
+                    |                   
+                    br
+                    | Unlimited&nbsp;MySQL-Databases
+                    |                   
+                    br
+                    |                   
+                    br
+                    | Unlimited&nbsp;Domains
+                    |                   
+                    br
+                    |                   
+                    br
+                    | Free&nbsp;Billing Systems
+                  a.plan-1-butn(href='#') Sign Up!
+              |             
+              .w-col.w-col-3
+                .plan1.plan2
+                  .plan2-ser2
+                    h4 SMALL BUSINESS
+                    |                   
+                    .price $25 / Month
+                  |                 
+                  p.plan1-ser1-para
+                    br
+                    | Unlimited&nbsp;Email-Addresses
+                    |                   
+                    br
+                    |                   
+                    br
+                    | 80GB&nbsp;Disk&nbsp;Space
+                    |                   
+                    br
+                    |                   
+                    br
+                    | Unlimited&nbsp;MySQL-Databases
+                    |                   
+                    br
+                    |                   
+                    br
+                    | Unlimited&nbsp;Domains
+                    |                   
+                    br
+                    |                   
+                    br
+                    | Free&nbsp;Billing Systems
+                  a.plan-1-butn2.plan-1-butn(href='#') Sign Up!
+              |             
+              .w-col.w-col-3
+                .plan1.plan3
+                  .plan1-ser1.plan3-ser3
+                    h4 CORPORATE SITE
+                    |                   
+                    .price $50 / Month
+                  |                 
+                  p.plan1-ser1-para
+                    br
+                    | Unlimited&nbsp;Email-Addresses
+                    |                   
+                    br
+                    |                   
+                    br
+                    | 120GB&nbsp;Disk&nbsp;Space
+                    |                   
+                    br
+                    |                   
+                    br
+                    | Unlimited&nbsp;MySQL-Databases
+                    |                   
+                    br
+                    |                   
+                    br
+                    | Unlimited&nbsp;Domains
+                    |                   
+                    br
+                    |                   
+                    br
+                    | Free&nbsp;Billing Systems
+                  a.plan-1-butn.plan-1-butn3(href='#') Sign Up!
+              |             
+              .w-col.w-col-3
+                .plan1.plan4
+                  .plan1-ser1.plan4-ser4
+                    h4 E-COMMERCE SITE
+                    |                   
+                    .price $90&nbsp;/ Month
+                  |                 
+                  p.plan1-ser1-para
+                    br
+                    | Unlimited&nbsp;Email-Addresses
+                    |                   
+                    br
+                    |                   
+                    br
+                    | 120GB&nbsp;Disk&nbsp;Space
+                    |                   
+                    br
+                    |                   
+                    br
+                    | Unlimited&nbsp;MySQL-Databases
+                    |                   
+                    br
+                    |                   
+                    br
+                    | Unlimited&nbsp;Domains
+                    |                   
+                    br
+                    |                   
+                    br
+                    | Free&nbsp;Billing Systems
+                  a.plan-1-butn.plan-4-butn4(href='#') Sign Up!
+    //
+      ///////////////////////////////////////////////////////
+      // End Our-Plan section
+      //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      // Team section
+      //////////////////////////////////////////////////////////
+    #team.team-parlex
+      .parlex5-back
+        .w-container
+          .wrap
+            .team
+              h1.team TEAM
+              |             
+              .sepreater.team-sep
+            |           
+            .team-text
+              p.team-text-para
+                | We are Elegance. We offer creative solutions for every web-based project you can think of.&nbsp;
+                br
+                | We take pride in our work and everything we create is executed with precision and love.
+            |           
+            .w-row.team-member
+              .w-col.w-col-4
+                .team-section
+                  .team-image
+                    img.team-img(src='/views/test/images/team/image1.png', alt='52dd1e57e64ce6cb200004f3_image1.png')
+                  |                 
+                  .team-des
+                    h4.team-name JANE ANISTON
+                    |                   
+                    .team-name-des Creative Director
+                  |                 
+                  .team-social
+                    .w-clearfix.social-section
+                      a(href='https://www.facebook.com/')
+                        img.social(src='/views/test/images/social/Facebook.png', alt='52dd249c929b601f5400054c_Facebook.png')
+                      |                     
+                      a(href='https://www.twitter.com/')
+                        img.social(src='/views/test/images/social/Twitter.png', alt='52dd24f2929b601f54000551_Twitter.png')
+                      |                     
+                      a(href='https://www.linkedin.com/')
+                        img.social(src='/views/test/images/social/Linkedin.png', alt='52dd2672e64ce6cb2000053a_Linkedin.png')
+                      |                     
+                      a(href='https://plus.google.com/')
+                        img.social(src='/views/test/images/social/Google-plus.png', alt='52dd26a55b54031d540005af_Google-plus.png')
+                      |                     
+                      a(href='https://www.rss.com/')
+                        img.social(src='/views/test/images/social/RSS.png', alt='52dd26d25b54031d540005b4_RSS.png')
+              |             
+              .w-col.w-col-4
+                .team-section
+                  .team-image
+                    img.team-img(src='/views/test/images/team/image2.png', alt='52dd1edfe64ce6cb200004fb_image2.png')
+                  |                 
+                  .team-des
+                    h4.team-name JOHN DOE
+                    |                   
+                    .team-name-des Lead Developer
+                  |                 
+                  .team-social
+                    .w-clearfix.social-section
+                      a(href='https://www.facebook.com/')
+                        img.social(src='/views/test/images/social/Facebook.png', alt='52dd249c929b601f5400054c_Facebook.png')
+                      |                     
+                      a(href='https://www.twitter.com/')
+                        img.social(src='/views/test/images/social/Twitter.png', alt='52dd24f2929b601f54000551_Twitter.png')
+                      |                     
+                      a(href='https://www.linkedin.com/')
+                        img.social(src='/views/test/images/social/Linkedin.png', alt='52dd2672e64ce6cb2000053a_Linkedin.png')
+                      |                     
+                      a(href='https://plus.google.com/')
+                        img.social(src='/views/test/images/social/Google-plus.png', alt='52dd26a55b54031d540005af_Google-plus.png')
+                      |                     
+                      a(href='https://www.rss.com/')
+                        img.social(src='/views/test/images/social/RSS.png', alt='52dd26d25b54031d540005b4_RSS.png')
+              |             
+              .w-col.w-col-4
+                .team-section
+                  .team-image
+                    img.team-img(src='/views/test/images/team/image3.png', alt='52dd1efcad165eca20000539_image3.png')
+                  |                 
+                  .team-des
+                    h4.team-name TANE NISTON
+                    |                   
+                    .team-name-des Graphic Designer
+                  |                 
+                  .team-social
+                    .w-clearfix.social-section
+                      a(href='https://www.facebook.com/')
+                        img.social(src='/views/test/images/social/Facebook.png', alt='52dd249c929b601f5400054c_Facebook.png')
+                      |                     
+                      a(href='https://www.twitter.com/')
+                        img.social(src='/views/test/images/social/Twitter.png', alt='52dd24f2929b601f54000551_Twitter.png')
+                      |                     
+                      a(href='https://www.linkedin.com/')
+                        img.social(src='/views/test/images/social/Linkedin.png', alt='52dd2672e64ce6cb2000053a_Linkedin.png')
+                      |                     
+                      a(href='https://plus.google.com/')
+                        img.social(src='/views/test/images/social/Google-plus.png', alt='52dd26a55b54031d540005af_Google-plus.png')
+                      |                     
+                      a(href='https://www.rss.com/')
+                        img.social(src='/views/test/images/social/RSS.png', alt='52dd26d25b54031d540005b4_RSS.png')
+    //
+      ///////////////////////////////////////////////////////
+      // End Team section
+      //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      // Clients section
+      //////////////////////////////////////////////////////////
+    .clients-parlex
+      .parlex6-back
+        .w-container
+          .wrap-client
+            .clients-sub
+              #clients
+                .clients-wrap
+                  ul#clients-list.clearfix
+                    li
+                      img(src='/views/test/images/clients/client-logo1.png', alt='logo')
+                    |             
+                    li
+                      img(src='/views/test/images/clients/client-logo2.png', alt='logo')
+                    |             
+                    li
+                      img(src='/views/test/images/clients/client-logo3.png', alt='logo')
+                    |             
+                    li
+                      img(src='/views/test/images/clients/client-logo4.png', alt='logo')
+                    |             
+                    li
+                      img(src='/views/test/images/clients/client-logo5.png', alt='logo')
+                    |             
+                    li
+                      img(src='/views/test/images/clients/client-logo6.png', alt='logo')
+                // @end .clients-wrap
+              // @end #clients
+    //
+      ///////////////////////////////////////////////////////
+      // End Clients section
+      //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      // Contact section
+      //////////////////////////////////////////////////////////
+    #contact.contact-parlex
+      .parlex8-back
+        .w-container
+          .wrap
+            .contact-div
+              h1.contact-heading CONTACT
+              |             
+              .sepreater
+            |           
+            p.contact-para
+              | Thanks for taking the time to contact us!
+              br
+              | We do our best to respond to quickly, it could take us 1-2 business days to get back to you. Feel free to say hello!
+            |           
+            .w-form
+              form(action='contact.php', method='post')
+                label(for='name') Name:
+                |              
+                input.w-input(type='text', placeholder='Enter your name', name='cf_name')
+                |            
+                label(for='email') Email Address:
+                |              
+                input.w-input(placeholder='Enter your email address', type='text', name='cf_email', required='required')
+                |            
+                label(for='email') Your Message:
+                |              
+                textarea.w-input.message(placeholder='Enter your Message Here', name='cf_message')
+                br
+                |            
+                input.w-button(type='submit', value='Send')
+              |           
+              .w-form-done
+                p Thank you! Your submission has been received!
+              |             
+              .w-form-fail
+                p Oops! Something went wrong while submitting the form :(
+        |       
+        .w-widget.w-widget-map.contac-map(data-widget-latlng='37.782163,-122.400591', data-widget-style='roadmap', data-widget-zoom='10', data-widget-tooltip='Carino Headquater')
+        |       
+        .w-container
+          .w-row.contact-col
+            .w-col.w-col-4.contact-col1
+              div
+                .hi-icon-wrap.hi-icon-effect-5.hi-icon-effect-5a
+                  a.hi-icon.hi-icon-earth(href='#set-5') Partners
+                |               
+                h4.contact-col-head Visit Us
+              |             
+              div
+                .contact-col-text
+                  | 795 Folsom St., Suite 600
+                  br
+                  | San Francisco, CA 94107
+            |           
+            .w-col.w-col-4.contact-col2
+              div
+                .hi-icon-wrap.hi-icon-effect-5.hi-icon-effect-5a
+                  a.hi-icon.hi-icon-mail(href='#set-5') Partners
+                |               
+                h4.contact-col-head Mail us
+              |             
+              div
+                .contact-col-text
+                  | general: office@elegance.com
+                  br
+                  | support: support@elegance.com
+            |           
+            .w-col.w-col-4.contact-col3
+              div
+                .hi-icon-wrap.hi-icon-effect-5.hi-icon-effect-5a
+                  a.hi-icon.hi-icon-mobile(href='#set-5') Partners
+                |               
+                h4.contact-col-head Call Us
+              |             
+              div
+                .contact-col-text-bar-last
+                  | P: (452) 123-8970
+                  br
+                  | F: (452) 123-8971
+    //
+      ///////////////////////////////////////////////////////
+      // End Contact section
+      //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      // Footer section
+      //////////////////////////////////////////////////////////
+    .footer-parlex
+      .parlex9-back
+        .w-container
+          .wrap
+            img.footer-logo(src='/views/test/images/footer-logo.png', alt='Elegance')
+            |           
+            .footer-social
+              .fotter-social-wrap
+                a(href='https://www.facebook.com/')
+                  img.fotter-social(src='/views/test/images/social/Facebook.png', alt='52dd249c929b601f5400054c_Facebook.png')
+                |               
+                a(href='https://www.twitter.com/')
+                  img.fotter-social(src='/views/test/images/social/Twitter.png', alt='52dd24f2929b601f54000551_Twitter.png')
+                |               
+                a(href='https://plus.google.com/')
+                  img.fotter-social(src='/views/test/images/social/Google-plus.png', alt='52dd26a55b54031d540005af_Google-plus.png')
+                |               
+                a(href='https://www.blogger.com/')
+                  img.fotter-social(src='/views/test/images/social/Blogger.png', alt='52de52e7b6d2171f78000414_Blogger.png')
+                |               
+                a(href='https://www.digg.com/')
+                  img.fotter-social(src='/views/test/images/social/Digg.png', alt='52de53174702a71e780003c3_Digg.png')
+                |               
+                a(href='https://www.pinterest.com/')
+                  img.fotter-social(src='/views/test/images/social/Pinterest.png', alt='52de533c5d3566c1430003e9_Pinterest.png')
+                |               
+                a(href='https://www.flicker.com/')
+                  img.fotter-social(src='/views/test/images/social/Flickr.png', alt='52de535f1b42bfc24300049e_Flickr.png')
+                |               
+                a(href='https://www.vimeo.com/')
+                  img.fotter-social(src='/views/test/images/social/Vimeo.png', alt='52de537cb6d2171f7800041c_Vimeo.png')
+                |               
+                a(href='https://www.myspace.com/')
+                  img.fotter-social(src='/views/test/images/social/Myspace.png', alt='52de53954702a71e780003c5_Myspace.png')
+                |               
+                a(href='https://www.stumbleupon.com/')
+                  img.fotter-social(src='/views/test/images/social/Stumbleupn.png', alt='52de53c0b6d2171f7800041e_Stumbleupn.png')
+                |               
+                a(href='https://www.tumblr.com/')
+                  img.fotter-social(src='/views/test/images/social/Tumblr.png', alt='52de54021b42bfc2430004a3_Tumblr.png')
+                |               
+                a(href='https://www.youtube.com/')
+                  img.fotter-social(src='/views/test/images/social/Youtube.png', alt='52de54495d3566c14300040a_Youtube.png')
+            |           
+            div
+              .fotter-text
+                p.fotter-quote &ldquo; THE LIGHT WITHIN US BOWS TO THE LIGHT WITHIN YOU. &rdquo;
+                |               
+                p.copyright-area
+                  | &copy;2014 ELEGANCE. ALL RIGHTS RESERVED,TEMPLATE BY&nbsp;
+                  a(href='https://carinotech.com', title='Carino Technologies', target='_blank') CARINO TECHNOLOGIES
+    //
+      ///////////////////////////////////////////////////////
+      // End Footer section test
+      //////////////////////////////////////////////////////////
+    script(type='text/javascript', src='/views/test/js/jquery.js?')
+    |   
+    script(type='text/javascript', src='/views/test/js/normal.js')
+    |   
+    script(type='text/javascript', src='/views/test/js/jquery-1.10.2.min.js?')
+    |   
+    script(type='text/javascript', src='/views/test/js/carousels.js?')
+    |   
+    script(type='text/javascript', src='/views/test/js/slider-modernizr.js?')
+    |   
+    script(src='/views/test/js/classie.js?')
+    |   
+    script(src='/views/test/js/portfolio-effects.js?')
+    |   
+    script(src='/views/test/js/toucheffects.js?')
+    |   
+    script(src='/views/test/js/modernizr.js?')
+    |   
+    script(src='/views/test/js/animation.js?')

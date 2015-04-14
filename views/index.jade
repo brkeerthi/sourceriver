@@ -1,0 +1,473 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    |   
+    title Source River 
+    |   
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    |   
+    link(rel='stylesheet', type='text/css', href='/views/test/css/normal.css?')
+    |   
+    link(rel='stylesheet', type='text/css', href='/views/test/css/style.css?')
+    |   
+    link(rel='stylesheet', href='/views/test/css/animation.css?')
+    |   
+    script(src='https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js')
+    |   
+    script.
+      if (/mobile/i.test(navigator.userAgent)) document.documentElement.className += ' w-mobile';
+    |   
+    link(rel='shortcut icon', type='image/x-icon', href='favicon.ico')
+    //if lt IE 9
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js')
+  body
+    #home.fix-header
+      .w-container
+        .w-nav(data-collapse='medium', data-animation='default', data-duration='400')
+    |   
+    .fixed-header
+      .w-container.container
+        .w-row
+          //
+            ///////////////////////////////////////////////////////
+            // Logo sections
+            //////////////////////////////////////////////////////////
+          .w-col.w-col-3.logo
+            a(href='#')
+              img.logo(src='/views/test/images/logo.png', alt='Source River')
+          //
+            ///////////////////////////////////////////////////////
+            // End Logo section
+            //////////////////////////////////////////////////////////
+          .w-col.w-col-9
+            //
+              ///////////////////////////////////////////////////////
+              // Menu section
+              //////////////////////////////////////////////////////////
+            .w-nav.navbar(data-collapse='medium', data-animation='default', data-duration='400', data-contain='1')
+              .w-container.nav
+                nav.w-nav-menu.nav-menu(role='navigation')
+                  a.w-nav-link.menu-li(href='#home') HOME
+                  |                 
+                  a.w-nav-link.menu-li(href='#about') ABOUT
+                  |                 
+                  a.w-nav-link.menu-li(href='#service') HOW IT WORKS
+                  |                 
+                  a.w-nav-link.menu-li(href='/contact/') CONTACT
+                  |                 
+                  a.w-nav-link.menu-li(href='/login/') LOGIN
+                  |                 
+                  a.w-nav-link.menu-li(href='/signup/') SIGNUP
+                |               
+                .w-nav-button
+                  .w-icon-nav-menu
+            //
+              ///////////////////////////////////////////////////////
+              // End Menu section
+              //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      //  Slider section
+      //////////////////////////////////////////////////////////
+    .slidersection
+      .sp-slideshow
+        input#button-1.sp-selector-1(type='radio', name='radio-set', checked='checked')
+        |         
+        label.button-label-1(for='button-1')
+        |         
+        |         
+        input#button-2.sp-selector-2(type='radio', name='radio-set')
+        |         
+        label.button-label-2(for='button-2')
+        |         
+        |         
+        input#button-3.sp-selector-3(type='radio', name='radio-set')
+        |         
+        label.button-label-3(for='button-3')
+        |         
+        |         
+        input#button-4.sp-selector-4(type='radio', name='radio-set')
+        |         
+        label.button-label-4(for='button-4')
+        |         
+        |         
+        input#button-5.sp-selector-5(type='radio', name='radio-set')
+        |         
+        label.button-label-5(for='button-5')
+        |         
+        |         
+        label.sp-arrow.sp-a1(for='button-1')
+        |         
+        label.sp-arrow.sp-a2(for='button-2')
+        |         
+        label.sp-arrow.sp-a3(for='button-3')
+        |         
+        label.sp-arrow.sp-a4(for='button-4')
+        |         
+        label.sp-arrow.sp-a5(for='button-5')
+        |         
+        |         
+        .sp-content
+          .sp-parallax-bg
+          |           
+          ul.sp-slider.clearfix
+            li
+              img(src='/views/test/images/slider/slider1.png', alt='image01')
+            |             
+            li
+              img(src='/views/test/images/slider/slider2.png', alt='image02')
+            |             
+            li
+              img(src='/views/test/images/slider/slider3.png', alt='image03')
+            |             
+            li
+              img(src='/views/test/images/slider/slider4.png', alt='image04')
+            |             
+            li
+              img(src='/views/test/images/slider/slider5.png', alt='image05')
+        // sp-content
+      // sp-slideshow
+    //
+      ///////////////////////////////////////////////////////
+      // End slider section
+      //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      // About section
+      //////////////////////////////////////////////////////////
+    #about.about-parlex
+      section.parlex7-back
+        .w-container
+          #about-animation
+            .wrap
+              .about
+                h1.about-heading ABOUT
+                |             
+                .about-text WHO WE ARE ?
+                |             
+                .sepreater
+              |           
+              p.about-des
+                | We are a Startup that put together a community of young Developers around the world.
+                br
+                |We are trying to bridge the gap between supply and demand of skills.
+                br
+                |To create a pool of talented students time whocan with the real-time problems.
+    //
+      ///////////////////////////////////////////////////////
+      // End about section
+      //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      // Who We Are Section
+      //////////////////////////////////////////////////////////
+    .exp.service-parlex
+      .exp-back
+        .w-container
+          #who-v-animation
+            .wrap
+              .w-row.exp-des
+                .w-col.w-col-6.exp-col1
+                  .col1-div
+                    .experinc-box
+                      h3.experinc-box-h3 What We Do.
+                      |                 
+                      p
+                        | We want bridge the gap between the supply and demand of skills.
+                        | Conduct real-time hackathons. 
+                        br
+                        |  Fetching talented students from schools and colleges to make them market ready to solve real-time problems.
+    
+                |             
+                .w-col.w-col-6.exp-col2
+                  .col2-div
+                    img(src='/views/test/images/hey.png')
+    //
+      ///////////////////////////////////////////////////////
+      // End Who We Are section
+      //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      // Call to action section
+      //////////////////////////////////////////////////////////
+
+    //
+      ///////////////////////////////////////////////////////
+      // End call to action section
+      //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      // Service section
+      //////////////////////////////////////////////////////////
+    section#service.service-parlex
+      section.parlex-back
+        .w-container
+          .wrap
+            .service-combo
+              .services
+                h1.service-heading How does Source River Work?
+                |               
+                .services-text 
+                |               
+                .sepreater.service
+              |             
+              .services-text
+                | &ldquo; THE BEST RESULTS ARE OBTAINED BY TASKING THE RIGHT PEOPLE TO THE RIGHT PROJECT &rdquo;
+                br
+                | We understand that everybody has their unique strengths and we put that knowledge to use by assembling the most efficient team possible for your project. You know your business better than anyone. Your insights, combined with our skills
+                |               and creativity, will result in finding the best talent for your company. 
+              |             
+              .w-row
+                .w-col.w-col-3.services-column
+                  .service-icon
+                    img(src='/views/test/images/services/Web-Design-Development.png')
+                  |                 
+                  h4.service-head Compete in Hackathons
+                |               
+                .w-col.w-col-3
+                  .service-icon
+                    img(src='/views/test/images/services/Branding-Identity.png')
+                  |                 
+                  h4.service-head Take on challenges
+                |               
+                .w-col.w-col-3
+                  .service-icon
+                    img(src='/views/test/images/services/Motion-Video.png')
+                  |                 
+                  h4.service-head Show Case Your Programming Skills
+                |               
+                .w-col.w-col-3
+                  .service-icon
+                    img(src='/views/test/images/services/UX-UI.png')
+                  |                 
+                  h4.service-head
+                    | Get Instant Job offers
+                    
+    //
+      ///////////////////////////////////////////////////////
+      // End Service section
+      //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      // Process section
+      //////////////////////////////////////////////////////////
+    
+    //
+      ///////////////////////////////////////////////////////
+      // End Process section
+      //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      // Porfolio section
+      //////////////////////////////////////////////////////////
+  
+    //
+      ///////////////////////////////////////////////////////
+      // End Porfolio section
+      //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      // Our-plan section
+      //////////////////////////////////////////////////////////
+    
+    //
+      ///////////////////////////////////////////////////////
+      // End Our-Plan section
+      //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      // Team section
+      //////////////////////////////////////////////////////////
+    #team.team-parlex
+      .parlex5-back
+        .w-container
+          .wrap
+            .team
+              h1.team TEAM
+              |             
+              .sepreater.team-sep
+            |           
+            .team-text
+              p.team-text-para
+                | We are Elegance. We offer creative solutions for every web-based project you can think of.&nbsp;
+                br
+                | We take pride in our work and everything we create is executed with precision and love.
+            |           
+            .w-row.team-member
+              .w-col.w-col-4
+                .team-section
+                  .team-image
+                    img.team-img(src='/views/test/images/team/image1.png', alt='52dd1e57e64ce6cb200004f3_image1.png')
+                  |                 
+                  .team-des
+                    h4.team-name JANE ANISTON
+                    |                   
+                    .team-name-des Creative Director
+                  |                 
+                  .team-social
+                    .w-clearfix.social-section
+                      a(href='https://www.facebook.com/')
+                        img.social(src='/views/test/images/social/Facebook.png', alt='52dd249c929b601f5400054c_Facebook.png')
+                      |                     
+                      a(href='https://www.twitter.com/')
+                        img.social(src='/views/test/images/social/Twitter.png', alt='52dd24f2929b601f54000551_Twitter.png')
+                      |                     
+                      a(href='https://www.linkedin.com/')
+                        img.social(src='/views/test/images/social/Linkedin.png', alt='52dd2672e64ce6cb2000053a_Linkedin.png')
+                      |                     
+                      a(href='https://plus.google.com/')
+                        img.social(src='/views/test/images/social/Google-plus.png', alt='52dd26a55b54031d540005af_Google-plus.png')
+                      |                     
+                      a(href='https://www.rss.com/')
+                        img.social(src='/views/test/images/social/RSS.png', alt='52dd26d25b54031d540005b4_RSS.png')
+              |             
+              .w-col.w-col-4
+                .team-section
+                  .team-image
+                    img.team-img(src='/views/test/images/team/image2.png', alt='52dd1edfe64ce6cb200004fb_image2.png')
+                  |                 
+                  .team-des
+                    h4.team-name JOHN DOE
+                    |                   
+                    .team-name-des Lead Developer
+                  |                 
+                  .team-social
+                    .w-clearfix.social-section
+                      a(href='https://www.facebook.com/')
+                        img.social(src='/views/test/images/social/Facebook.png', alt='52dd249c929b601f5400054c_Facebook.png')
+                      |                     
+                      a(href='https://www.twitter.com/')
+                        img.social(src='/views/test/images/social/Twitter.png', alt='52dd24f2929b601f54000551_Twitter.png')
+                      |                     
+                      a(href='https://www.linkedin.com/')
+                        img.social(src='/views/test/images/social/Linkedin.png', alt='52dd2672e64ce6cb2000053a_Linkedin.png')
+                      |                     
+                      a(href='https://plus.google.com/')
+                        img.social(src='/views/test/images/social/Google-plus.png', alt='52dd26a55b54031d540005af_Google-plus.png')
+                      |                     
+                      a(href='https://www.rss.com/')
+                        img.social(src='/views/test/images/social/RSS.png', alt='52dd26d25b54031d540005b4_RSS.png')
+              |             
+              .w-col.w-col-4
+                .team-section
+                  .team-image
+                    img.team-img(src='/views/test/images/team/image3.png', alt='52dd1efcad165eca20000539_image3.png')
+                  |                 
+                  .team-des
+                    h4.team-name TANE NISTON
+                    |                   
+                    .team-name-des Graphic Designer
+                  |                 
+                  .team-social
+                    .w-clearfix.social-section
+                      a(href='https://www.facebook.com/')
+                        img.social(src='/views/test/images/social/Facebook.png', alt='52dd249c929b601f5400054c_Facebook.png')
+                      |                     
+                      a(href='https://www.twitter.com/')
+                        img.social(src='/views/test/images/social/Twitter.png', alt='52dd24f2929b601f54000551_Twitter.png')
+                      |                     
+                      a(href='https://www.linkedin.com/')
+                        img.social(src='/views/test/images/social/Linkedin.png', alt='52dd2672e64ce6cb2000053a_Linkedin.png')
+                      |                     
+                      a(href='https://plus.google.com/')
+                        img.social(src='/views/test/images/social/Google-plus.png', alt='52dd26a55b54031d540005af_Google-plus.png')
+                      |                     
+                      a(href='https://www.rss.com/')
+                        img.social(src='/views/test/images/social/RSS.png', alt='52dd26d25b54031d540005b4_RSS.png')
+    //
+      ///////////////////////////////////////////////////////
+      // End Team section
+      //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      // Clients section
+      //////////////////////////////////////////////////////////
+    .clients-parlex
+      .parlex6-back
+        .w-container
+          .wrap-client
+            .clients-sub
+              #clients
+                .clients-wrap
+                  ul#clients-list.clearfix
+                    li
+                      img(src='/views/test/images/clients/client-logo1.png', alt='logo')
+                    |             
+                    li
+                      img(src='/views/test/images/clients/client-logo2.png', alt='logo')
+                    |             
+                    li
+                      img(src='/views/test/images/clients/client-logo3.png', alt='logo')
+                    |             
+                    li
+                      img(src='/views/test/images/clients/client-logo4.png', alt='logo')
+                    |             
+                    li
+                      img(src='/views/test/images/clients/client-logo5.png', alt='logo')
+                    |             
+                    li
+                      img(src='/views/test/images/clients/client-logo6.png', alt='logo')
+                // @end .clients-wrap
+              // @end #clients
+    //
+      ///////////////////////////////////////////////////////
+      // End Clients section
+      //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      // Contact section
+      //////////////////////////////////////////////////////////
+  
+    //
+      ///////////////////////////////////////////////////////
+      // End Contact section
+      //////////////////////////////////////////////////////////
+    //
+      ///////////////////////////////////////////////////////
+      // Footer section
+      //////////////////////////////////////////////////////////
+    .footer-parlex
+      .parlex9-back
+        .w-container
+          .wrap
+            img.footer-logo(src='/views/test/images/logo.png', alt='Source River')
+            |           
+            .footer-social
+              .fotter-social-wrap
+                a(href='https://www.facebook.com/')
+                  img.fotter-social(src='/views/test/images/social/Facebook.png', alt='52dd249c929b601f5400054c_Facebook.png')
+                |               
+                a(href='https://www.twitter.com/')
+                  img.fotter-social(src='/views/test/images/social/Twitter.png', alt='52dd24f2929b601f54000551_Twitter.png')
+               
+            |           
+            div
+              .fotter-text
+                p.fotter-quote &ldquo; THE LIGHT WITHIN US BOWS TO THE LIGHT WITHIN YOU. &rdquo;
+                |               
+                p.copyright-area
+                  | &copy;2015 Source River. ALL RIGHTS RESERVED
+    //
+      ///////////////////////////////////////////////////////
+      // End Footer section test
+      //////////////////////////////////////////////////////////
+    script(type='text/javascript', src='/views/test/js/jquery.js?')
+    |   
+    script(type='text/javascript', src='/views/test/js/normal.js')
+    |   
+    script(type='text/javascript', src='/views/test/js/jquery-1.10.2.min.js?')
+    |   
+    script(type='text/javascript', src='/views/test/js/carousels.js?')
+    |   
+    script(type='text/javascript', src='/views/test/js/slider-modernizr.js?')
+    |   
+    script(src='/views/test/js/classie.js?')
+    |   
+    script(src='/views/test/js/portfolio-effects.js?')
+    |   
+    script(src='/views/test/js/toucheffects.js?')
+    |   
+    script(src='/views/test/js/modernizr.js?')
+    |   
+    script(src='/views/test/js/animation.js?')
